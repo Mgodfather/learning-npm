@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>understanding NPM</title>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <p>fetch use krne ke liye ek library hoti hai -> Axios, hum jo .then krke use krte, ye bss uss chezz ko chota bna deta hai.</p>
+    <p>how axios work -> cdn ke through uska link hum head meiu dete hai, aur ya fir usko locally download krke fir jaise hum script.js file add krte hai wese hi usse add krte hai.</p>
+    <p>fir ek 3 method hai ki npm ke though hum usse uss krte hai</p>
+    <p>so this is one of the usecase of of npm, isme hum yehi dekhege ki keise use krte hai npm ko. </p>
+
+    <h2><p>lets see hpe to create npm project</p></h2>
+    <h3>
+        <ol>
+            <li>
+                ->   git init (this is will give yoy a (package.json) file)
+            </li>
+            <li>
+                -> lets see with example ->  npm i axios (means ki install axios). after runnig this command 3 things happed ==> node_module folder created, package-lock.json file crated & dependencies naam ki key aa jatai hai package.json mei
+            </li>
+            <li>now you have to import axios but this code will not work because its not type module. type module krne ke liye package.json mei ek key/ value pair add krna pdega. phir run hoga aram se prr/but => ye srif backend mei yaani node js mei hi run krega, hmare browser mei ya kahe frontend mei usse hum access nhi krr skte.</li>
+            <li>abb isse access krne ke liye hume parcel naam ki library install krne pdegi.</li>
+            <li>if we want to share this project. then we dont share the -> node_module folder and libraries which we install.</li>
+        </ol>
+    </h3>
+    
+</body>
+</html>
